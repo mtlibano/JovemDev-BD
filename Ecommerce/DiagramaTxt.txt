@@ -1,0 +1,8 @@
+categoria(id, descricao)
+produto(id, nome, valor_unitario, qtd, id_categoria)
+cliente(id, nome, sexo, data_nasc, id_end, numero)
+endereco(id, logradouro, bairro, id_cidade)
+cidade(id, nome, uf)
+telefone(id, id_cliente, telefone)
+venda(id, data, id_cliente)
+venda_produto(id, id_venda, id_produto, qtd)

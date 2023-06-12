@@ -61,7 +61,7 @@ where p.qtd < 4;
 --Selecionar o cliente que realizou a primeira compra na loja
 select *
 from cliente c
-inner join venda v on v.id_cliente = c.id_cliente and v.data_venda = (select max(data_venda) from venda);
+inner join venda v on v.id_cliente = c.id_cliente and v.data_venda = (select min(data_venda) from venda);
 
 
 
